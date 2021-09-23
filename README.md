@@ -1,4 +1,5 @@
 - 👋 Hi there, I am Dhiraj. You can call me Dhiru..  
+- I don't code.. Actually I can't :cry:
 - 👀 I’m interested in learning various technologies. My special inclination is for Linux.
 - 🌱 I’m currently learning splunk.
 - 📫 I am also a former ZOHO consultant.
