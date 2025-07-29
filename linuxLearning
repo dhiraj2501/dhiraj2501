@@ -1,3 +1,5 @@
+SHAREE SWAMI SAMARTH
+*----------------------------------------------*-------------------------------------------------*
 Instllation of Catpuccin: 
 
 For Linux:
@@ -13,3 +15,4 @@ source ~/.bashrc
 mkdir -p ~/.config && touch ~/.config/starship.toml
 starship preset catppuccin-powerline -o ~/.config/starship.toml
 
+*----------------------------------------------*-------------------------------------------------*
