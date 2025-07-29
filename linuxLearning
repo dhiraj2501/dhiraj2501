@@ -1,0 +1,15 @@
+Instllation of Catpuccin: 
+
+For Linux:
+sudo curl -sS https://starship.rs/install.sh | sh
+
+
+echo 'eval "$(starship init bash)"' >> ~/.bashrc or 
+echo 'eval "$(starship init bash)"' >> ~/.zshrc for ZSH. 
+
+
+source ~/.bashrc
+
+mkdir -p ~/.config && touch ~/.config/starship.toml
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+
