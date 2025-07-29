@@ -16,3 +16,7 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 starship preset catppuccin-powerline -o ~/.config/starship.toml
 
 *----------------------------------------------*-------------------------------------------------*
+
+VM SNapshot using timeshift. 
+
+
