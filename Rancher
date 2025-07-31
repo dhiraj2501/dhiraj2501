@@ -1,0 +1,21 @@
+# See what the external ingress returns (without correct host header — would give 404)
+curl -vk https://54.234.226.225:30477/
+
+# Simulate the expected Host header
+curl -vk https://54.234.226.225.sslip.io:30477/ -H "Host: 54.234.226.225.sslip.io"
+
+# Port-forward directly to Rancher to isolate external ingress
+kubectl -n cattle-system port-forward svc/rancher 8443:443
+curl -vk https://localhost:8443/ -H "Host: 54.234.226.225.sslip.io"
+
+# Inspect ingress
+kubectl -n cattle-system get ingress
+kubectl -n cattle-system describe ingress rancher
+
+# Check Rancher service and endpoints
+kubectl -n cattle-system get svc rancher
+kubectl -n cattle-system get endpoints rancher
+
+# Check Rancher pod status and logs
+kubectl -n cattle-system get pods -l app=rancher
+kubectl -n cattle-system logs deploy/rancher -n cattle-system
