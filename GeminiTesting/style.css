@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+canvas {
+    display: block;
+    background-color: #000;
+}
+
+#game-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#score-container, #lives-container {
+    margin-bottom: 10px;
+}
+
+#highScoreDisplay h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+#highScoreList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#highScoreList li {
+    margin-bottom: 5px;
+}
+
+#startMenu, #pauseMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#startMenu input {
+    font-size: 1.5em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#startMenu button, #pauseMenu button {
+    font-size: 2em;
+    padding: 15px 30px;
+    background-color: #00ff00;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#startMenu button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
